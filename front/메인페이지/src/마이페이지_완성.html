@@ -17,14 +17,13 @@
         rel="stylesheet">
     <!--Flatpickr-->
     <link rel="stylesheet" href="assets/vendor/flatpickr/flatpickr.min.css">
-    <!-- Quill editor stylesheet -->
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
     <!--File uploader-->
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
     <link href="https://unpkg.com/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.css" rel="stylesheet">
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
         rel="stylesheet">
+    
     <!-- Main CSS -->
     <link href="assets/css/theme.min.css" rel="stylesheet">
 
@@ -92,6 +91,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="collapse navbar-collapse" id="mainNavbarTheme">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item dropdown">
@@ -333,217 +334,397 @@
     </header>
 
 
-
     <!--메인 -->
+    
     <main class="main-content position-relative z-index-2 bg-white" id="main-content">
+        
         <section class="position-relative bg-light">
-            <div class="container  pt-11 pb-7 pb-lg-9">
-                <div class="row pt-lg-5">
-                    <div class="col-lg-8">
-                        <h2 class="display-4">여행 게시판</h2>
-                        <p>Layout footer fixed at bottom using pure javascript code </p>
+            <div style="padding-top: 50px;"></div>
+            <main class="main-content" id="main-content">
+                <!--
+                <section class="position-relative bg-white">
+                    <div class="container position-relative pt-3 pb-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav class="d-md-flex" aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">
+                                            Profile
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        
+    
                     </div>
-                </div>
-            </div>
+                </section>
+                -->
+                <section class="position-relative">
+                    <div class="container position-relative">
+                        <div class="overflow-hidden">
+    
+                            <!--Profile info header-->
+                            <div class="position-relative pb-7 pb-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3 mb-5 mb-lg-0">
+                                        <div class="h-lg-100">
+                                            <div class="card bg-gradient-light h-lg-100 p-3">
+                                                <div>
+                                                    <!--profile image-->
+                                                    <div class="size-160 mb-5 rounded-circle shadow bg-no-repat overflow-hidden bg-contain"
+                                                        style="background-image: url(assets/img/avatar/4.jpg);">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="d-flex flex-column h-100">
+                                            <div class="card shadow-sm p-3 h-100">
+                                                <h4 class="mb-2">@@@님의 여행 수첩</h4>
+                                                    <small class="d-block mb-3">(가입일자)부터 현재까지 (기간)동안 여행기록</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column h-100">
+                                            <div class="card shadow-sm p-3 h-100">
+                                                <h4 class="mb-2">방문 여행지</h4>
+                                                
+                                                <div class="">
+                                                    <h6>좋아요</h6>
+                                                    <p>Lorem ipsum dolor sit amet.
+                                                    Vel accusamus voluptates officiis quas!
+                                                    Rem sed consectetur quis quas.
+                                                    Adipisci excepturi dolorum molestias aspernatur.
+                                                    Voluptatem enim earum debitis minima?</p>
+        
+                                                </div>
+                                                <div><hr></div>
+                                                <div class="">
+                                                    <h6>싫어요</h6>
+                                                    <p>Lorem ipsum dolor sit amet.
+                                                    Maiores rerum vero eum nemo.
+                                                    Nihil veniam asperiores iure sit.
+                                                    Qui, maxime quibusdam! Facere, molestiae?
+                                                    Ipsam corrupti commodi natus totam.</p>
+        
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column h-100">
+                                            <div class="card shadow-sm p-3 h-50">
+                                                <h4 class="mb-2">여행 코스 목록</h4>
+                                                <p>Lorem ipsum dolor sit amet.
+                                                Distinctio ipsam consequuntur dolorem ab?
+                                                Fugiat, omnis sapiente. Saepe, iste.</p>
+                                            </div>
+                                            <div class="">
+                                                
+                                            </div>
+                                            <div class="card shadow-sm p-3 h-50">
+                                                <h4 class="mb-2">찜한 여행지 (총 @@개)</h4>
+                                                <p>Lorem ipsum dolor sit amet.
+                                                Modi id incidunt labore fuga?
+                                                Iure dolorum impedit minima quis!</p>
+                                            </div>
+                                            <div class="">
+                                                
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <hr>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+    
+                <!--나만의 인기 후기-->
+                <section class="overflow-hidden position-relative">
+                    <div class="position-absolute start-0 top-0 w-100 h-50 ">
+                    </div>
+                    <div class="container py-7 py-lg-12 position-relative">
+                        <div class="row mb-4 mb-lg-5 align-items-center">
+                            <div class="col-md-8">
+                                <div class="mb-3" data-aos data-aos-once="false">
+                                    <h1 class="mb-3 splitting-down display-4" data-splitting>나만의 인기 후기
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="position-relative d-flex justify-content-md-end align-items-center">
+                                    <!--Buttons navigation-->
+                                    <div
+                                        class="swiper3-button-prev swiper-button-prev mt-0 position-static rounded-pill size-50 border border-primary text-primary bg-transparent me-2">
+                                    </div>
+                                    <div
+                                        class="swiper3-button-next swiper-button-next mt-0 position-static rounded-pill size-50 border border-primary text-primary bg-transparent">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container swiper-3 overflow-visible">
+                            <div class="swiper-wrapper">
+    
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/2.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_1</small>
+                                            </div>
+                                            <div class="link-multiline fs-4 fw-semibold">
+                                                여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/1.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_2</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/3.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_3</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/4.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_4</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/5.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_5</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!--나만의 최신 후기-->
+                <section class="overflow-hidden position-relative">
+                    <div class="position-absolute start-0 top-0 w-100 h-50 ">
+                    </div>
+                    <div class="container py-7 py-lg-12 position-relative">
+                        <div class="row mb-4 mb-lg-5 align-items-center">
+                            <div class="col-md-8">
+                                <div class="mb-3" data-aos data-aos-once="false">
+                                    <h1 class="mb-3 splitting-down display-4" data-splitting>나의 최신 후기
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="position-relative d-flex justify-content-md-end align-items-center">
+                                    <!--Buttons navigation-->
+                                    <div
+                                        class="swiper3-button-prev swiper-button-prev mt-0 position-static rounded-pill size-50 border border-primary text-primary bg-transparent me-2">
+                                    </div>
+                                    <div
+                                        class="swiper3-button-next swiper-button-next mt-0 position-static rounded-pill size-50 border border-primary text-primary bg-transparent">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container swiper-3 overflow-visible">
+                            <div class="swiper-wrapper">
+    
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/2.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_1</small>
+                                            </div>
+                                            <div class="link-multiline fs-4 fw-semibold">
+                                                여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/1.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_2</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/3.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_3</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/4.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_4</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                                <!--Slide-->
+                                <div class="swiper-slide">
+    
+                                    <!--Article-->
+                                    <article class="card-hover position-relative">
+                                        <div class="d-block overflow-hidden">
+                                            <img src="assets/img/800x600/5.jpg" alt="" class="img-fluid position-relative">
+                                        </div>
+                                        <div class="position-relative p-4">
+                                            <div class="d-flex justify-content-start w-100 pb-3 align-items-center">
+                                                <small class="text-muted">후기 이름_5</small>
+                                            </div>
+                                            <div>
+                                                <div class="link-multiline fs-4 fw-semibold">
+                                                    여행지 이름 / 작성자 / 작성자 레벨 / 관력태그 / 좋아요 / 싫어요
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </section>
-        <br><br>
-
-        <div class="container py-7 py-lg-1">
-            <div class="row mb-7 mb-15 justify-content-center">
-
-                <!-- 가로길이 조정  -->
-                <div class="col-xxl-12 mb-15 mb-15">
-                    <!-- 테이블 시작 -->
-                    <hr class="my-xxl-2">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">13</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">14</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">15</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">16</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">17</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">18</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">19</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">20</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>twitter</td>
-                                    <td>twitter</td>
-                                </tr><tr>
-                                    <th scope="row">21</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>twitter</td>
-                                    <td>twitter</td>
-                                </tr><tr>
-                                    <th scope="row">22</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>twitter</td>
-                                    <td>twitter</td>
-                                </tr><tr>
-                                    <th scope="row">23</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>twitter</td>
-                                    <td>twitter</td>
-                                </tr><tr>
-                                    <th scope="row">24</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>twitter</td>
-                                    <td>twitter</td>
-                                </tr><tr>
-                                    <th scope="row">25</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>twitter</td>
-                                    <td>twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- 테이블 종료 -->
-
-                    <!-- 글쓰기 버튼 -->
-                    <input type="radio" class="btn-check" id="plan-monthly" name="toggle-radio" checked="">
-                    <label class="btn btn-outline-primary" for="plan-monthly" >글쓰기</label>
-                    
-                    <nav aria-label="Page navigation example">
-                        <br>
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
     </main>
 
 
@@ -736,19 +917,7 @@
     </a>
     <!-- scripts -->
     <script src="assets/js/theme.bundle.js"></script>
-
-
-    <!-- 테이블 스크립트 -->
-    <!-- begin Back to Top button -->
-    <a href="#" class="toTop">
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 9' class="align-middle rotate-180" width="13"
-            height="9">
-            <path fill='currentColor'
-                d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
-            </path>
-        </svg>
-    </a>
-
+    
 </body>
 
 </html>
