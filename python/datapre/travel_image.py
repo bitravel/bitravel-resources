@@ -135,6 +135,8 @@ urls = [
 #    if i != 18:
 #        urls.append(url_gb+str(i))
 
+# 전체 파일은 나중에 한번에 구동하여 다시 써야 함
+
 # 경남
 for i in range(1, 22):
     if i != 11:
@@ -170,6 +172,7 @@ for i in range(len(urls)):
 
 print(df_image)
 
-df_image.to_csv('../preprocessing/image.csv', sep=',', mode='w', header=True, index=False, encoding='cp949')
+# df_image.to_csv('../preprocessing/image.csv', sep=',', mode='w', header=True, index=False, encoding='cp949')
 
+df_image.to_csv('../preprocessing/image.csv', sep=',', mode='a', header=False, index=False, encoding='cp949')
 
