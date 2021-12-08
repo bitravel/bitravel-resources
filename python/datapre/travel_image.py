@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 
 import pandas as pd
-import numpy as np
 
 # 관광지 (문화시설 제외)
 url_sgp = 'http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?serviceKey=k9ex5ipQp8k' \
@@ -79,61 +78,61 @@ url_jn = 'http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedL
 
 urls = [
     url_sgp,
-    url_jj,
+   url_jj,
 ]
 
 # 서울
-#for i in range(1, 26):
-#    urls.append(url_seoul + str(i))
+for i in range(1, 26):
+    urls.append(url_seoul + str(i))
 
 # 인천
-#for i in range(1, 11):
-#    urls.append(url_ic + str(i))
+for i in range(1, 11):
+    urls.append(url_ic + str(i))
 
 # 대전
-#for i in range(1, 6):
-#    urls.append(url_dj + str(i))
+for i in range(1, 6):
+    urls.append(url_dj + str(i))
 
 # 대구
-#for i in range(1, 9):
-#    urls.append(url_dg + str(i))
+for i in range(1, 9):
+    urls.append(url_dg + str(i))
 
 # 광주
-#for i in range(1, 6):
-#    urls.append(url_gj + str(i))
+for i in range(1, 6):
+    urls.append(url_gj + str(i))
 
 # 부산
-#for i in range(1, 17):
-#    urls.append(url_bs + str(i))
+for i in range(1, 17):
+    urls.append(url_bs + str(i))
 
 # 울산
-#for i in range(1, 6):
-#    urls.append(url_us + str(i))
+for i in range(1, 6):
+    urls.append(url_us + str(i))
 
 # 세종
-#urls.append(url_sj)
+urls.append(url_sj)
 
 # 경기
-#for i in range(1, 32):
-#    urls.append(url_gg+str(i))
+for i in range(1, 32):
+    urls.append(url_gg+str(i))
 
 # 강원도
-#for i in range(1, 19):
-#    urls.append(url_gw + str(i))
+for i in range(1, 19):
+    urls.append(url_gw + str(i))
 
 # 충북
-#for i in range(1, 13):
-#    urls.append(url_cb + str(i))
+for i in range(1, 13):
+    urls.append(url_cb + str(i))
 
 # 충남
-#for i in range(1, 17):
-#    if i != 10:
-#        urls.append(url_cn + str(i))
+for i in range(1, 17):
+    if i != 10:
+        urls.append(url_cn + str(i))
 
 # 경북
-#for i in range(1, 24):
-#    if i != 18:
-#        urls.append(url_gb+str(i))
+for i in range(1, 24):
+    if i != 18:
+        urls.append(url_gb+str(i))
 
 # 전체 파일은 나중에 한번에 구동하여 다시 써야 함
 
@@ -172,7 +171,7 @@ for i in range(len(urls)):
 
 print(df_image)
 
-# df_image.to_csv('../preprocessing/image.csv', sep=',', mode='w', header=True, index=False, encoding='cp949')
+df_image.to_csv('../preprocessing/image.csv', sep=',', mode='w', header=True, index=False, encoding='cp949')
 
-df_image.to_csv('../preprocessing/image.csv', sep=',', mode='a', header=False, index=False, encoding='cp949')
+# df_image.to_csv('../preprocessing/image.csv', sep=',', mode='a', header=False, index=False, encoding='cp949')
 
